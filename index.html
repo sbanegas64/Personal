@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+      }
+      body{
+        font-family: 'Arial', 'Helvetica', 'sans-serif';
+        margin: 15px;
+        padding: 5px;
+        background-color:#94221A;
+      }
+      .nav1{
+        width: 100%;
+        padding: 5px;
+        background-color: #ca6137;
+        color:#222;
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva, Verdana, sans-serif';
+      }
+      
+      .nav1 div{
+        padding: 10px;
+      }
+      img{
+        width: 20px;
+      }
+      
+      .img1{
+        width:40px;
+        margin-left: 30px;
+      }
+      
+      .nav2{
+        width: 100%;
+        padding: 5px;
+        color:#222;
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva, Verdana, sans-serif';
+        background-color: #c05d3a;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 100;
+        
+      }
+      .arte{
+        background-color: #DF8065;
+      
+      }
+      a{
+        margin-right:20px ;
+        text-decoration: none;
+        color: #222;
+        padding: 15px;
+      }
+      
+      a:hover{
+        background-color:#e26961;
+      }
+      
+      .blanco{
+        width: 100%;
+      }
+      .img{
+        position: relative;
+      }
+      
+      .pers{
+        width: 350px;
+        position:absolute;
+        top: 90px;
+        left: 250px;
+      
+      }
+      
+      .text, .parr{
+        position: relative;
+      }
+      
+      .text{
+        position: absolute;
+        top: 460px;
+        left: 800px;
+        font-size: 20px;
+      }
+      
+      .porta{
+        background-color: whitesmoke;
+        padding: 10px;
+      }
+      
+      .cont2{
+        background-color: #DF8065;
+        width: 100%;  
+        display: flex;
+        padding: 200px;
+        flex-direction: row;
+        gap: 200px;
+        justify-content: center;
+      }
+      
+      .imgp{
+        width: 250px;
+      }
+      
+      .sob{
+        position: relative;
+      }
+      
+      .sob{
+        position: absolute;
+        top: 1155px;
+        display: flex;
+        justify-content: space-between;
+        left: 600px;
+      }
+      
+      p{
+        background-color: #DF8065;
+        padding: 5px;
+      }
+      
+      .dis{
+        padding: 20px;
+      }
+      
+      .cont3{
+        width: 100%;
+        background-color: #df8065;
+        padding: 270px;
+      }
+      
+      ul li{
+        padding: 10px;
+        
+      }
+      
+      ul{
+        background-color: #DF8065
+      }
+      
+      .habi{
+        text-align: center;
+      }
+      
+      .cont4{
+        width: 100%;
+        background-color: #ac4f36;
+        padding: 200px;
+      }
+      
+      .contenedor{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+      
+      .p{
+        background-color: #AC4F36;
+      }
+      
+      .row{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+      }
+      
+      .titu{
+        font-weight: bold;
+      
+      }
+      
+      .subti{
+        padding:15px ;
+        color: black;
+      }
+      
+      .title{
+        text-align: center;
+      }
+      
+      
+      
+      .formu{
+        display: flex;
+      }
+      .formup2,
+      .formu .formup2{
+        height: 45px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .textarea{
+        height: 80px;
+        width: 100%;
+      }
+      .name{
+        margin-right: 10px;
+      }
+      .formup2 input, .formu input,
+      .textarea textarea{
+        height: 100%;
+        width: 100%;
+        border: 1px solid lightgrey;
+        border-radius: 6px;
+        outline: none;
+        padding: 0 15px;
+        font-size: 17px;
+        font-family: 'Poppins', sans-serif;
+        transition: all 0.3s ease;
+      }
+      .formup2 input:focus, .formu input:focus,
+      .textarea textarea:focus{
+        border-color: #b3b3b3;
+      }
+      .textarea textarea{
+      padding-top: 10px;
+      resize: none;
+      }
+      .button{
+      display: flex;
+      align-items: center;
+      }
+      form .button button{
+      color: #fff;
+      display: block;
+      width: 160px;
+      height: 45px;
+      outline: none;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      flex-wrap: nowrap;
+      background:#CC6633;
+      border: 2px solid #df7e4e;
+      margin-top: 20px;
+      }
+      form .button button:hover{
+      color: #ca774e;
+      background: none;
+      }
+      
+      .name, .email{
+        margin-bottom:10px;
+        height: 30px;
+      }
+</style>
+<body>
+    <div class="Contenedor1">
+        <nav class="nav1">
+            <div> Portafolio Personal </div>
+            <div>
+                <a href="https://www.facebook.com/profile.php?id=100075412562762" target="_blank"><img src="C:\Users\Usuario\Desktop\yp\.vscode\Facebook_Logo_(2019).png"></a>
+                <a href="https://www.instagram.com/spideygirlx/" target="_blank"><img src="C:\Users\Usuario\Desktop\yp\.vscode\Instagram_logo_2016.svg.webp"></a>
+                <a href="https://twitter.com/spideygirlxh" target="_blank"><img src="C:\Users\Usuario\Desktop\yp\.vscode\twitter-logo-5.png"></a>
+            </div>
+        </nav>
+        <nav class="nav2">
+            <div>
+            <img src="https://seeklogo.com/images/S/spider-man-logo-280A670FA8-seeklogo.com.png" class="img1"> 
+            </div>
+            <div class="row">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </nav>
+        <div class="img" id="hom">
+            <img src="blanco.jpg" class="blanco">
+            <img src="per.jpeg" class="pers">
+        </div>
+        <div class="text">
+            <h2>¡Hola! Mi Nombre es</h2>
+            <h1>Samantha Banegas</h1>
+            <h3 class="porta">Y sean bienvenidos </h3>
+            <h3 class="porta">a mi Portafolio Personal.❤️</h3>
+        </div>
+    </div>
+    <h1 class="sob">Sobre mí</h1>
+    <div class="cont2" id="abou">
+        <div class="dis">
+            <img src="nar1.jpeg" class="imgp"><br>
+            <p class="parr">Soy una persona demasiado alegre, me gusta divertirme con mis amigos, me encanta hacer a la gente feliz, me encanta salir de mi zona de comfort y hacer cosas que nunca jamás llegué pensar a hacer</p>
+        </div>
+        <div class="dis">
+            <img src="nar2.jpeg" class="imgp"><br>
+            <p class="parr">Me gusta leer géneros variados, no tengo un género favorito, pero los que más me llaman la atencion son: Romanticismo, Misterio y Enemies to Lovers</p>
+        </div>
+        <div class="dis">
+            <img src="nar3.jpeg" class="imgp"><br>
+            <p class="parr">Me gusta mucho ver películas de superhéroes, en especial las de Marvel, también me gustan mucho las películas de miedo y mi series favoritas son: Grey's Anatomy, The Office, Brooklyn 99</p>
+        </div>
+    </div>
+    <div class="cont3" id="habilidades">
+       <h1 class="habi">Habilidades adquiridas</h1><br>
+       <p>En mis años de la carrera de Informática he adquirido varias habilidades como las siguientes:
+            <ul>
+                <li>Aprendí el idioma de programación "Pseint" en el año 2020-2021, este idioma es demasiado fácil de aprender y no lleva mucho tiempo hacerlo.</li>
+                <li>Aprendí también el idioma de HTML en la clase de Diseño Web</li>
+                <li>Ahora estoy aprendiendo a utilizar el idioma CSS también en la clase de Diseño Web</li>
+                <li>Aprendí a codificar Macros en la clase de laboratorio y a hacer varias funcionalidades importantes ahí</li>
+             </ul>
+        </p> 
+        <p class="arte">Con respecto a otras cosas también aprendí:
+          <ul>
+            <li>Tocar el violín</li>
+            <li>Estoy aprendiendo a tocar la Flauta Traversa</li>
+            <li>Me gusta mucho la pintura, pero no tengo habilidades artísticas como para emplearlas</li>
+          </ul>
+       </p> 
+    </div>
+
+    <div class="cont4" id="contact">
+        <section class="contact">
+                <h2 class="title">Contacto</h2>
+                <div class="contenedor">
+                    <div class="izquierda">
+                        <div class="titu">Información</div>
+                        <p class="p">Para más información sobre mí o cualquier ayuda que pueda brindar, no dudes en contactarme.</p>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="titu">Nombre</div>
+                                    <div class="subti">Samantha Banegas</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="titu">Dirección</div>
+                                    <div class="subti">Comayagua, Honduras</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="titu">Email</div>
+                                    <div class="subti">samanthabanegas1995@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fab fa-whatsapp"></i>
+                                <div class="info">
+                                    <div class="titu">Teléfono</div>
+                                    <div class="subti"><a href="https://api.whatsapp.com/send?phone=50498291930&text=Contáctame." target="_blank">(+504) 9829-1930</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="derecha">
+                        <div class="titu">Mensaje</div>
+                            <form>
+                                <div class="formu">
+                                    <div class="name">
+                                        <input type="text" placeholder="Nombre" id="nombre" required>
+                                    </div>
+                                    <div class="email">
+                                        <input type="email" id="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="formup2">
+                                    <input type="text" id="asunto" placeholder="Asunto" required>
+                                </div>
+                                <div class="textarea">
+                                    <textarea cols="30" rows="10" id="mensaje" placeholder="Mensaje.." required></textarea>
+                                </div>
+                                <div class="button">
+                                    <button type="submit">Enviar Mensaje</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+</body>
+</html> 
